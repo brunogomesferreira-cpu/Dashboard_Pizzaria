@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Gomes Pizzaria</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Biblioteca dos gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍕 Gomes Pizzaria</h1>
+        <p>Dashboard de Vendas</p>
+    </header>
+
+    <main>
+
+        <h2>Resumo de Vendas</h2>
+
+        
+        <section class="cards">
+
+            <div class="card">
+                <h3>Faturamento</h3>
+                <h1>R$ 18.450</h1>
+                <p>▲ 12,3%</p>
+            </div>
+
+            <div class="card">
+                <h3>Pedidos</h3>
+                <h1>320</h1>
+                <p>▲ 8,7%</p>
+            </div>
+
+            <div class="card">
+                <h3>Ticket Médio</h3>
+                <h1>R$ 57,66</h1>
+                <p>▲ 4,2%</p>
+            </div>
+
+            <div class="card">
+                <h3>Pizzas Vendidas</h3>
+                <h1>485</h1>
+                <p>▲ 10,5%</p>
+            </div>
+
+        </section>
+
+
+        <section class="graficos">
+
+            <div class="grafico">
+                <h3>📈 Vendas Mensais</h3>
+                <canvas id="graficoVendas"></canvas>
+            </div>
+
+            <div class="grafico">
+                <h3>🍕 Pizzas Mais Vendidas</h3>
+                <canvas id="graficoPizzas"></canvas>
+            </div>
+
+            <div class="grafico">
+                <h3>📦 Tipos de Pedidos</h3>
+                <canvas id="graficoPedidos"></canvas>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Gomes Pizzaria - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
